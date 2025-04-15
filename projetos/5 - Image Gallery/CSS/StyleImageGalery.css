@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    margin-top: 30px; /*Margem do topo*/
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+/*proporção das imagens na tela*/
+.gallery{
+    height: 80%;/*altura*/
+    width: 50%; /*largura*/
+    display: flex; /*especifica o comportamento de exibição de um elemento.*/
+    margin: 5% auto 0;
+    box-sizing: border-box; /*para incluir preenchimento e borda na largura e altura totais de um elemento.*/
+}
+
+/*configuração entre as imagens*/
+.image-box{
+    margin: 0 1%;
+    flex-grow: 1; /*propriedade especifica quanto o item crescerá em relação ao restante dos itens flexíveis dentro do mesmo*/
+    flex-basis: 0;/*especifica o comprimento inicial de um item flexível.*/
+    transition: .5s; /*transição*/
+}
+
+/*configuração das imagens*/
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+/*animação*/
+.image-box:hover{
+    flex-basis: 50%;
+}
+
+/*primeira imagem ativada*/
+.active{
+    flex-basis: 50%;
+}
+
+/*recolhimento da imagem ativada*/
+.gallery:hover .active{
+    flex-basis: 0;
+}
+
+
+.image-box:nth-child(1):hover{/*nth-child pega a localização da classe correspondente entre () dentro de uma div*/
+    flex-basis: 50%;
+}

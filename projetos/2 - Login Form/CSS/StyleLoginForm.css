@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");/*Esta puxando a fonte das letras*/
+
+*{  
+    margin: 0; /*Margem*/
+    padding: 0; /*acolchoamento da pág(conteúdo de um elemento e suas bordas)*/
+    box-sizing: border-box; /*Para incluir preenchimento e borda na largura e altura totais de um elemento*/
+    font-family: "Poppins", sans-serif;
+}
+
+/*Imagem de fundo do form*/
+body{
+    display: flex; /*display especifica o comportamento de exibição de um elemento*/
+    justify-content: center;/*conteudo justificado centralizado*/
+    align-items: center; /*alinhamento centralizado*/
+    min-height: 100vh;/*vh para altura ou largura do viewport*/
+    background: url('../img/img.jpg') no-repeat;/*puxando imagem de fundo*/
+    background-size: cover; /*tamanho do fundo*/
+    background-position: center; /*tamanho do fundo*/
+}
+
+/*Quadrado de fundo dos itens interativos*/
+.wrapper{
+    width: 420px;/*largura*/
+    background: transparent;/*fundo transparente*/
+    border: 2px solid rgba(255, 255, 255, .2); /*borda cor*/
+    backdrop-filter: blur(20px); /*permite aplicar efeitos gráficos*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); /*cria um efeito de sombra atrás da caixa do elemento*/
+    color: #fff; /*cor dos itens login, icones, lembrar-me e não tem conta*/
+    border-radius: 10px; /*arredondamento das bordas*/
+    padding: 30px 40px;
+}
+
+/*Login*/
+.wrapper h1{
+    font-size: 36px; /*tamanho da fonte*/
+    text-align: center; /*alinhamento do texto*/
+}
+
+/*itens interativos, barras*/
+.wrapper .input-box{
+    position: relative;
+    width: 100%; /*largura das barras interativas*/
+    height: 50px;/*altura*/
+    margin: 30px 0;
+}
+
+/*itens interativos, barras*/
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none; /*adiciona uma linha em volta do elemento*/
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+/*texto dentro das barras*/
+.input-box input::placeholder{/*estiliza texto do input ou areatexto*/
+    color: #fff;
+}
+
+/*texto dentro das barras, icones*/
+.input-box i{ /*i é italico, esta rementendo aos icones*/
+    position: absolute;
+    right: 20px;
+    top: 50%; /*Altura dos icones*/
+    transform: translateY(-50%); /*translatey reposiciona o item verticalmente (y), resultado de uma transformação*/
+    font-size: 20px;
+}
+
+/*texto esqueceu senha*/
+.wrapper .remember-forgot{
+    display: flex; /*Especificar o comportamento de exibição de um elemento*/
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+/*texto esqueceu senha*/
+.remember-forgot label input {
+    accent-color: #fff; /*especifica a acentuação da cor*/
+    margin-right: 3px;
+}
+
+/*texto esqueceu senha*/
+.remember-forgot a {/*a define o hyperlink que é usado para vincular de uma pagina para outra */
+    color: #fff;
+    text-decoration: none;
+}
+
+/*texto esqueceu senha*/
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+/*itens interativos, login*/
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600; /*grossura da fonte*/
+}
+
+/*itens interativos, registrar*/
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+/*itens interativos, registrar*/
+.register-link p a {/*p define o paragrafo*/
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*itens interativos, registrar*/
+.register-link p a:hover{
+    text-decoration: underline;
+}

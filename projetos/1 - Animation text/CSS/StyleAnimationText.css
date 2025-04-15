@@ -1,0 +1,16 @@
+*{
+    margin: 0; /*Margem da pág*/
+    padding: 0; /*acolchoamento da pág(conteúdo de um elemento e suas bordas)*/
+}
+
+h1{
+    font-family:sans-serif; /*Fonte do texto*/
+    text-align: center; /*Alinhamento do texto*/
+    margin-top: 150px; /*Margem do topo*/
+    font-size: 150px; /*Tamanho da fonte*/
+    font-weight: 800; /*espessura da fonte*/
+    color: transparent; /*Cor da fonte*/
+    background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExczh5ZTQ3Z2lxM3R0aDY3eXhtaGpnaHVvdW5va2Rhd2lyYnVvYmcwaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YqhIK6Gbor6CLeloBq/giphy.gif); /*está pegando o link de um gif de outro site*/
+    background-position: center; /*esta alinhando a imagem no centro dentro do h1*/
+    background-clip: text; /*especifica o elemento que deve estar na frente*/
+}

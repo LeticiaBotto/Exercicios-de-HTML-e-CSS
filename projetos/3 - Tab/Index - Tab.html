@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Tab</title>
+    <link rel="stylesheet" href="/3 - Tab/CSS/StyleTab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/> <!--link para puxar diretamente varios icones-->
+</head>
+<body>
+    <div class="container">
+        <div class="main-title">CSS Vertical Tabs</div><!--div contém os topicos do menu em input-->
+        <div class="content">
+            <input type="radio" name="indicator" checked id="home"><!--input serve para poder inserir dados-->
+            <input type="radio" name="indicator" id="blog">
+            <input type="radio" name="indicator" id="help">
+            <input type="radio" name="indicator" id="code">
+            <input type="radio" name="indicator" id="about">
+            <div class="list"><!--div contem a lista dos topicos em texto-->
+                <label for="home" class="home"><!--label para definir um rótulo para elementos de formulário, como caixas de seleção, botões de opção e campos de texto -->
+                    <i class="fas fa-home"></i>
+                    <span class="topic">Home</span><!--contêiner embutido usado para marcar uma parte de um texto ou uma parte de um documento.-->
+                </label>
+                <label for="blog" class="blog">
+                    <i class="fas fa-blog"></i>
+                    <span class="topic">Blog</span>
+                </label>
+                <label for="help" class="help">
+                    <i class="far fa-envelope"></i>
+                    <span class="topic">Help</span>
+                </label>
+                <label for="code" class="code">
+                    <i class="fas fa-code"></i>
+                    <span class="topic">Code</span>
+                </label>
+                <label for="about" class="about">
+                    <i class="fas fa-user"></i>
+                    <span class="topic">About</span>
+                </label>
+                <div class="indicator"></div>
+            </div>
+            <div class="text-content"><!--div contém os textos de cada tópico-->
+                <div class="home text">
+                    <div class="title">Home Content</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nobis distinctio id excepturi quasi, aliquam dolorem cupiditate laudantium eos similique odio suscipit. Tempore in autem doloremque porro earum voluptas? Eum, dolore iure atque libero earum, nulla eveniet facere quaerat sunt cumque est incidunt suscipit veniam rem autem voluptatem omnis laudantium nostrum placeat totam! Quisquam incidunt veniam doloribus laboriosam recusandae deleniti dolores.</p>
+                </div>
+                <div class="blog text">
+                    <div class="title">Blog Content</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nobis distinctio id excepturi quasi, aliquam dolorem cupiditate laudantium eos similique odio suscipit. Tempore in autem doloremque porro earum voluptas? Eum, dolore iure atque libero earum, nulla eveniet facere quaerat sunt cumque est incidunt suscipit veniam rem autem voluptatem omnis laudantium nostrum placeat totam!  Illo hic quas esse vero itaque doloribus sunt officia nisi, sed, numquam nesciunt recusandae perferendis! Aliquid eaque saepe sit quis, possimus vero alias, repudiandae assumenda suscipit expedita, numquam eos?</p>
+                </div>
+                <div class="help text">
+                    <div class="title">Help Content</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nobis distinctio id excepturi quasi, aliquam dolorem cupiditate laudantium eos similique odio suscipit. Tempore in autem doloremque porro earum voluptas? Eum, dolore iure atque libero earum, nulla eveniet facere quaerat sunt cumque est incidunt suscipit veniam rem autem voluptatem omnis laudantium nostrum placeat totam! Quisquam incidunt veniam doloribus laboriosam recusandae deleniti dolores. Illo hic quas esse vero itaque doloribus sunt officia nisi, sed, numquam nesciunt recusandae perferendis! ?</p>
+                </div>
+                <div class="code text">
+                    <div class="title">Code Content</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam incidunt veniam doloribus laboriosam recusandae deleniti dolores. Illo hic quas esse vero itaque doloribus sunt officia nisi, sed, numquam nesciunt recusandae perferendis! Aliquid eaque saepe sit quis, possimus vero alias, repudiandae assumenda suscipit expedita, numquam eos?</p>
+                </div>
+                <div class="about text">
+                    <div class="title">About Content</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nobis distinctio id excepturi quasi, aliquam dolorem cupiditate laudantium eos similique odio suscipit. Tempore in autem doloremque porro earum voluptas? Quisquam incidunt veniam doloribus laboriosam recusandae deleniti dolores. Illo hic quas esse vero itaque doloribus sunt officia nisi, sed, numquam nesciunt recusandae perferendis! Aliquid eaque saepe sit quis, possimus vero alias, repudiandae assumenda suscipit expedita, numquam eos?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
